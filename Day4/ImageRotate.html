@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Rotation</title>
+    <style>
+        .img{
+            position: relative;
+            transition: 5s;
+            height: 300px;
+            width: 500px;
+        }
+        .img img{
+            position: relative;
+            transition: 3s;
+        }
+        .Overlay{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 300px;
+            width: 500px;
+            opacity: 0%;
+            transition: 5s;
+            background-color: rgb(44, 40, 40)
+        }
+        .img:hover .Overlay{
+            opacity: 2;
+        }
+        .img:hover img {
+            transform: rotateX(360deg); 
+        }
+        .text{
+            color: white;
+            font-size: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Image Overlay Effect</h2>
+    <div class="img">
+        <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg" height="300px" width="500px">
+        <div class="Overlay">
+            <div class="text">Hello</div>
+        </div>
+    </div>
+</body>
+</html>

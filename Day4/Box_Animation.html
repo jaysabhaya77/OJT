@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Animation</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            position: relative;
+            animation-name: box;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            margin-top: 25px;
+            margin-left: 200px;
+            /* animation-direction: reverse; */
+        }
+
+        .triangle-up {
+            width: 0;
+            height: 0;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom: 50px solid #555;
+        }
+
+        @keyframes box {
+            0% {
+                background-color: black;
+                top: 0px;
+                left: 0px;
+                transform: rotate(0deg);
+            }
+
+            25% {
+                background-color: darkcyan;
+                top: 0px;
+                left: 200px;
+                transform: rotate(180deg);
+                /* height: 200px; */
+                /* width: 200px; */
+            }
+
+            50% {
+                background-color: rgb(255, 0, 0);
+                top: 200px;
+                left: 200px;
+                transform: rotate(0deg);
+                /* height: 100px; */
+                /* width: 100px; */
+            }
+
+            75% {
+                background-color: rgb(81, 255, 0);
+                top: 200px;
+                left: 0px;
+                transform: rotate(180deg);
+                /* height: 50px; */
+                /* width: 50px; */
+            }
+
+            100% {
+                background-color: rgb(0, 0, 0);
+                top: 0px;
+                left: 0px;
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div class="triangle-up"></div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .fullscreen_bg{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            background-size: cover;
+            overflow: hidden;
+        }
+        .fullscreen_bg_video{
+            position: fixed;
+            width: auto;
+            height: auto;
+            min-height: 100%;
+            min-width: 100%;
+        }
+        h2{ 
+            background-color: rgb(12, 13, 13);
+            color: rgb(155, 151, 99);
+        }
+    </style> 
+</head>
+<body>
+    <h2>Animated Video</h2>
+    <div class="fullscreen_bg">
+        <video src="video.webm" autoplay controls loop muted class="fullscreen_bg_video"></video>
+    </div>
+    <h2>Jay Sabhaya</h2>
+    <h2>Jay Sabhaya</h2>
+</body>
+</html>
