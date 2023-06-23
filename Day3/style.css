@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+img{
+    border: 2px solid rgb(39, 31, 31);
+    border-radius: 20px;
+}
+
+#main{
+    background-color: rgb(240, 226, 208);
+}
+
+#aboutus{
+    margin-top: 20px;
+    font-family: monospace;
+}
+
+#mainmenu{
+        text-align: center;
+        margin-top: 50px;
+}
+
+#pizza{ 
+    display: inline-block;
+    width: 28%;
+    background-color: rgb(200, 18, 18);
+    border: 2px solid rgb(39, 31, 31);
+    border-radius: 20px;
+}
+
+#paneertikka{
+    display: inline-block;
+    height: 300px;
+    width: 30%;
+    background-color: rgb(200, 18, 18);
+    border: 2px solid rgb(39, 31, 31);
+    border-radius: 20px;
+}
+
+#southindian{
+    display: inline-block;
+    height: 300px;
+    width: 30%;
+    background-color: rgb(200, 18, 18);
+    border: 2px solid rgb(39, 31, 31);
+    border-radius: 20px;
+}
+
+#gujarati{
+    display: inline-block;
+    height: 300px;
+    width: 30%;
+    margin-top: 20px;
+    background-color: rgb(200, 18, 18);
+    border: 2px solid rgb(39, 31, 31);
+    border-radius: 20px;
+}
+
+#frenchfries{
+    display: inline-block;
+    height: 300px;
+    width: 30%;
+    margin-top: 20px;
+    background-color: rgb(200, 18, 18);
+    border: 2px solid rgb(39, 31, 31);
+    border-radius: 20px;
+}
+
+#punjabi{
+    display: inline-block;
+    height: 300px;
+    width: 30%;
+    margin-top: 20px;
+    background-color: rgb(200, 18, 18);
+    border: 2px solid rgb(39, 31, 31);
+    border-radius: 20px;
+}
+
+#locationdiv{
+    margin-top: 25px;
+}
+
+#change{
+    margin-left: 180px;
+}
