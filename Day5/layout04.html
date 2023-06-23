@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            font-size: 22px;
+            font-weight: bold;
+        }
+        #R1{
+            width: 98%;
+            height: 50px;
+            padding-top: 20px;
+            margin-bottom: 10px;
+            background-color: gray;
+            padding-left: 2%;
+            text-align: center;
+        }
+        #R2{
+            height: 830px;
+            margin-bottom: 10px;
+        }
+        #R1C1{
+            float: left;
+            width: 50%;
+        }
+        .box{
+            height: 200px;
+            width: 22%;
+            background-color: gray;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        #R2C1 .box{
+            float: left;
+            padding-right: 2%;
+        }
+        #R2C2 .box{
+            float: left;
+            padding-right: 2%;
+        }
+        #R2C3 .box{
+            float: left;
+            padding-right: 2%;
+        }
+        #R2C4 .box{
+            float: left;
+            padding-right: 2%;
+        }
+        #R2C1 :last-child, #R2C2 :last-child, #R2C3 :last-child,#R2C4 :last-child {
+            margin-right: 0;
+            width: 23.9%;
+        }
+        #R3{
+            width: 100%;
+            height: 600px;
+            margin-bottom: 10px;
+        }
+        #R3C1{
+            width: 32%;
+            margin-right: 2%;
+        }
+        #R3C2{
+            width: 32%;
+            margin-right: 2%;
+        }
+        #R3C3{
+            width: 32%;
+        }
+        #R3 div{
+            float: left;
+            height: 320px;
+            padding-top: 280px;
+            text-align: center;
+            background-color: gray;
+        }
+        #R4{
+            width: 98%;
+            height: 50px;
+            padding-top: 30px;
+            margin-bottom: 10px;
+            background-color: gray;
+            text-align: left;
+            padding-left: 2%;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <div id="R1">
+            <div id="R1C1">
+                LOGO
+            </div>
+            <div id="R1C2">
+                NAVIGATION
+            </div>
+        </div>
+        <div id="R2">
+            <div id="R2C1">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div id="R2C2">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div id="R2C3">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div id="R2C4">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div id="R3">
+            <div id="R3C1">
+                BOX 1
+            </div>
+            <div id="R3C2">
+                BOX 2
+            </div>
+            <div id="R3C3">
+                BOX 3
+            </div>
+        </div>
+        <div id="R4">
+            FOOTER
+        </div>
+    </div>
+</body>
+</html>

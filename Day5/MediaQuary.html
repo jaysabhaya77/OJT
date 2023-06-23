@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        * {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        #R1 {
+            height: 50px;
+            width: 98%;
+            background-color: rgb(157, 141, 121);
+            padding-top: 20px;
+            padding-left: 2%;
+            text-align: center;
+        }
+
+        #R11 {
+            float: left;
+            width: 50%;
+        }
+
+        #R2 {
+            height: 800px;
+            margin-top: 20px;
+            margin-bottom: 200px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 2%;
+        }
+
+        .R2class {
+            background-color: gray;
+            text-align: center;
+            font-size: 50px;
+
+            width: 200px;
+            height: 200px;
+            background-color: rgb(54, 41, 41);
+            position: relative;
+            animation-name: box;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            margin-top: 25px;
+            margin-left: 20px;
+            /* animation-direction: reverse; */
+        }
+        
+        
+        @keyframes box {
+            0% {
+                background-color: black;
+                /* top: 0px;
+                left: 0px; */
+                /* transform: rotate(0deg); */
+            }
+
+            25% {
+                background-color: darkcyan;
+                /* top: 0px;
+                left: 200px;
+                transform: rotate(180deg); */
+                /* height: 200px; */
+                /* width: 200px; */
+            }
+
+            50% {
+                background-color: rgb(255, 0, 0);
+                /* top: 200px;
+                left: 200px;
+                transform: rotate(0deg); */
+                /* height: 100px; */
+                /* width: 100px; */
+            }
+
+            75% {
+                background-color: rgb(81, 255, 0);
+                /* top: 200px;
+                left: 0px;
+                transform: rotate(180deg); */
+                /* height: 50px; */
+                /* width: 50px; */
+            }
+
+            100% {
+                background-color: rgb(0, 0, 0);
+                /* top: 0px;
+                left: 0px; */
+                /* transform: rotate(0deg); */
+            }
+        }
+        
+
+        .R2class:hover {
+            background-color: chartreuse;
+            color: red;
+        }
+
+        #R3 {
+            margin-top: 20px;
+            height: 400px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        #R3C1 {
+            width: 32%;
+            background-color: gray;
+            margin-right: 2%;
+            text-align: center;
+        }
+
+        #R3C2 {
+            width: 32%;
+            background-color: gray;
+            text-align: center;
+            margin-right: 2%;
+        }
+
+        #R3C3 {
+            width: 32%;
+            background-color: gray;
+            text-align: center;
+        }
+
+        #R3 div {
+            text-align: center;
+            float: left;
+            padding-top: 200px;
+            height: 200px;
+        }
+
+        #R3 div:hover {
+            background-color: cyan;
+        }
+
+        #R4 {
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            background-color: darkgrey;
+        }
+
+        /* Extra small devices (phones, 600px and down) */
+        @media (max-width: 600px) {
+            #R1, #R2, #R3, #R4 {
+                background: red;
+            }
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media (min-width: 600px) {
+            #R1, #R2, #R3, #R4 {
+                background: green;
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media (min-width: 768px) {
+            #R1, #R2, #R3, #R4 {
+                background: blue;
+            }
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media (min-width: 992px) {
+            #R1, #R2, #R3, #R4 {
+                background: rgb(77, 78, 43);
+            }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media (min-width: 1400px) {
+            #R1, #R2, #R3, #R4 {
+                background: pink;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="R1">
+        <div id="R11">Logo</div>
+        <div id="R12">Navigation</div>
+    </div>
+    <div id="R2">
+        <div class="R2class">☻</div>
+        <div class="R2class">☻</div>
+        <div class="R2class">☻</div>
+        <div class="R2class">☻</div>
+        <div class="R2class">☻</div>
+        <div class="R2class">☻</div>
+        <div class="R2class">☻</div>
+        <div class="R2class">☻</div>
+        <div class="R2class">☻</div>
+        <div class="R2class">☻</div>
+        <div class="R2class">☻</div>
+        <div class="R2class">☻</div>
+        <div class="R2class">☻</div>
+        <div class="R2class">☻</div>
+        <div class="R2class">☻</div>
+        <div class="R2class">☻</div>
+    </div>
+    <div id="R3">
+        <div id="R3C1">Box 1</div>
+        <div id="R3C2">Box 2</div>
+        <div id="R3C3">Box 3</div>
+    </div>
+    <div id="R4">
+        Footer
+    </div>
+</body>
+
+</html>
