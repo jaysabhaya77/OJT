@@ -1,109 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>table btn</title>
+    <style>
+        #push_item {
+            margin-bottom: 10px;
 
+        }
+        #btn_pop{
+            margin-bottom: 10px;
+        }
+        #btn_unshift{
+            margin-top: 10px;
+        }
+        #btn_merge{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
 <body>
-    <table border="2">
-        <tr>
-            <th align="right">Array:</th>
-            <th align="left"><input type="text" id="array_content" size="50"></th>
-        </tr>
-        <tr>
-            <th align="right">PUSH:</th>
-            <th><input type="text" autofocus placeholder="Enter text to push" id="push_item">
-                <input type="button" id="btn_push" value="PUSH"><br><br>
-                New Element will be add at Last
+    <center>
+    <table border="3" cellpadding="10" width="35%">
+        
+            <tr>
+                <th align="center">Array :</th>
+                <th><input type="text"  name="" id="array_content" size="40"></th>
+            </tr>
+        
+
+        
+            <tr>
+                <th align="center">Push :</th>
+                <th><input type="text" placeholder="Enter text to push"  id="push_item" size="40"> <br>
+                <input type="button" value="PUSH" id="btn_push"> <br>
+                 New element will br add at Last</th>
+            </tr>
+
+            <tr>
+                <th align="center">POP :</th>
+                <th><input type="button" value="Cliclk to POP" id="btn_pop"> <br>
+                Last element of the array will be remove</th>
+            </tr> 
+
+            <tr>
+                <th align="center">UnShift :</th>
+                <th><input type="text" name="" id="unshift_item" size="40"><br>
+                <input type="button" value="UnShift" id="btn_unshift" ><br>
+            New element will be add at First</th>
+            </tr> 
+
+            <tr>
+                <th align="center">Shift :</th>
+                <th><input type="button" value="Cliclk Shift" id="btn_shift"><br>
+                First element of the array will be remove</th>
+            </tr>
+             
+            <tr>
+                <th align="center">Sort :</th>
+                <th><input type="button" value="Sort Array" id="btn_sort"></th>
+            </tr> 
+            <tr>
+                <th align="center">Revers :</th>
+                <th><input type="button" value="Revers" id="btn_revers"></th>
+            </tr> 
+            <tr>
+                <th align="center">Concat :</th>
+                <th><input type="text" name="" id="merge" size="40"><br>
+                <input type="button" value="Merge Array" id="btn_merge"><br>
+                <input type="text" name="" id="array_merge" size="40"><br>
             </th>
-        </tr>
-        <tr>
-            <th align="right">POP:</th>
-            <th>
-                <input type="button" id="btn_pop" value="Click to POP"><br><br>
-                First Element of the array will be remove
-            </th>
-        </tr>
-        <tr>
-            <th align="right">UnShift:</th>
-            <th><input type="text" autofocus placeholder="Enter text to unshift" id="unshift_item">
-                <input type="button" id="btn_unshift" value="UnShift"><br><br>
-                New Element will be add at First
-            </th>
-        </tr>
-        <tr>
-            <th align="right">Shift:</th>
-            <th>
-                <input type="button" id="btn_shift" value="Click to Shift"><br><br>
-                First Element of the array will be remove
-            </th>
-        </tr>
-        <tr>
-            <th align="right">Sort:</th>
-            <th>
-                <input type="button" id="btn_sort" value="Sort Array"><br><br>
-            </th>
-        </tr>
-        <tr>
-            <th align="right">Reverse:</th>
-            <th>
-                <input type="button" id="btn_reverse" value="Reverse"><br><br>
-            </th>
-        </tr>
-        <tr>
-            <th align="right">Concat</th>
-            <th>
-                <input type="text" id="merge">
-                <input type="button" id="btn_merge" value="merge array"><br><br>
-                <input type="text" id="array_merge" size="50">
-            </th>
-        </tr>
+            </tr> 
+            
+        
     </table>
+</center>
 </body>
 <script>
     var array_content = document.getElementById("array_content");
     var push_item = document.getElementById("push_item");
-    var array = ["sandip","patel",20,"male","ahmedabad"];
+    var array =["Jay","Patel",20,"male","Ahmedabad"];
     var btn_push = document.getElementById("btn_push");
     var btn_pop = document.getElementById("btn_pop");
-    var unshift_item = document.getElementById("unshift_item");
-    var btn_unshift = document.getElementById("btn_unshift");
-    var btn_shift = document.getElementById("btn_shift");
-    var btn_sort = document.getElementById("btn_sort");
-    var btn_reverse = document.getElementById("btn_reverse");
-    var merge = document.getElementById("merge");
-    var btn_merge = document.getElementById("btn_merge");
-    var array_merge = document.getElementById("array_merge");
+    var unshift_item= document.getElementById("unshift_item");
+    var btn_unshift= document.getElementById("btn_unshift");
+    var btn_shift= document.getElementById("btn_shift");
+    var btn_sort= document.getElementById("btn_sort");
+    var btn_revers= document.getElementById("btn_revers");
+    var btn_merge= document.getElementById("btn_merge");
+    var array_merge= document.getElementById("array_merge");
+
     array_content.value = array;
-    btn_push.addEventListener("click",()=>{
+    btn_push.addEventListener("click", ()=>{
         array.push(push_item.value);
         array_content.value = array;
     });
-    btn_pop.addEventListener("click" , ()=>{
+
+    btn_pop.addEventListener("click",()=>{
         array.pop();
-        array_content.value = array;
+     array_content.value = array;
     });
+
+    btn_unshift.addEventListener("click", ()=>{
+        array.unshift(unshift_item.value);
+        array_content.value = array
+    });
+
     btn_shift.addEventListener("click", ()=>{
         array.shift();
         array_content.value = array;
-    })
+    });
+    
     btn_sort.addEventListener("click", ()=>{
-        array.sort();
-        array_content.value = array;
-    })
-    btn_reverse.addEventListener("click", ()=>{
+    array.sort();
+    array_content.value = array;
+    });
+
+    btn_revers.addEventListener("click", ()=>{
         array.reverse();
         array_content.value = array;
-    })
-    var data = ["jay" , "patel" , 25 , "male"];
-    merge.value = data;
-    btn_merge.addEventListener("click",()=>{
-        var merge_data = array.concat(data);
-        array_merge.value = merge_data;
-    })
-</script>
+    });
 
+    var data = ["prit","patel",22,"male"];
+    merge.value = data;
+
+    btn_merge.addEventListener("click",()=>{
+     var merge_data = array.concat(data);
+     array_merge.value = merge_data;
+    });
+    
+ </script>
 </html>
